@@ -9,12 +9,13 @@ const Navbar = () => {
             <div className='flex items-center justify-between py-3 font-medium'>
 
 
+                  <Link to='/'>
                   <img
                         src={assets.logo}
                         className='w-36 h-auto object-contain'
                         alt="VASTRA forever"
                   />
-
+                  </Link>
                   {/* Navigation */}
                   <ul className='hidden sm:flex items-center gap-6 text-sm text-gray-700'>
 
@@ -88,10 +89,10 @@ const Navbar = () => {
                                     <img src={assets.dropdown_icon} className='h-4 rotate-180' alt="" />
                                     <p>Back</p>
                               </div>
-                              <NavLink onClick={()=> setVisible(false)} className='py-2 pl-6 border' to='/'> HOME </NavLink>
-                              <NavLink onClick={()=> setVisible(false)} className='py-2 pl-6 border' to='/collection'> COLLECTION </NavLink>
-                              <NavLink onClick={()=> setVisible(false)} className='py-2 pl-6 border' to='/about'> ABOUT </NavLink>
-                              <NavLink onClick={()=> setVisible(false)} className='py-2 pl-6 border' to='/contact'> CONTACT </NavLink>
+                              <NavLink onClick={()=> setVisible(false)} className='py-2 pl-6 border border-gray-400' to='/'> HOME </NavLink>
+                              <NavLink onClick={()=> setVisible(false)} className='py-2 pl-6 border border-gray-400' to='/collection'> COLLECTION </NavLink>
+                              <NavLink onClick={()=> setVisible(false)} className='py-2 pl-6 border border-gray-400' to='/about'> ABOUT </NavLink>
+                              <NavLink onClick={()=> setVisible(false)} className='py-2 pl-6 border border-gray-400' to='/contact'> CONTACT </NavLink>
                         </div>
                   </div>
 
